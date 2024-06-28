@@ -1,0 +1,61 @@
+:root{
+    --black:#000;
+    --white:#fff;
+    --darkcyan: #062f2f;
+    --cyan: #AEDEE0;
+    --salmon:#fa8072;
+    --darksalmon:#a1463b;
+    --selectioncolor:#EF9D71;
+    --blue:#1b86f1;
+    --bluetext:#175491;
+}
+
+body {
+    transition: background-color ease-out 1s;
+}
+
+*::selection{
+    background-color: var(--selectioncolor);
+    /* background-color: #a1463b; */
+}
+
+
+/* theam-black */
+body[theme="black"] {
+    background-color: var(--black);
+}
+body[theme="black"] .section {
+    color: var(--white);
+}
+
+/* theam-cyan */
+body[theme="cyan"] {
+    background-color: var(--cyan);
+}
+body[theme="cyan"] .section {
+    color: var(--darkcyan);
+}
+
+/* theam-white */
+body[theme="white"] {
+    background-color: var(--white);
+}
+body[theme="white"] .section{
+    color : var(--black);
+}
+
+/* theam-salmon */
+body[theme="salmon"] {
+    background-color: var(--salmon);
+}
+body[theme="salmon"].section {
+    color : var(--darksalmon);
+}
+
+body[theme="blue"] {
+    background-color: var(--blue);
+}
+body[theme="blue"] .section {
+    color : var(--bluetext);
+}
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body theme="black" >
+    <!-- Uncomment the heading if needed
+    <h1 class="bg-red-300" >Radhe Radhe</h1>
+    -->
+    <div class="main h-fit">
+      <div data-color="blue" class=" color_manager home h-screen "></div>
+      <div data-color="cyan" class=" color_manager carousel h-screen"></div>
+      <div data-color="salmon" class=" color_manager trending h-screen"></div>
+      <div data-color="black" class=" color_manager book_section w-full">
+        <div class="book_container h-[500vh] relative">
+          <div class="slides w-full flex h-screen sticky top-0 left-0 gap-10">
+            <div data-color="salmon"  class=" color_manager slide w-full flex-shrink-0 mystery_books h-screen">
+              mystery_books
+            </div>
+            <div data-color="salmon"  class=" color_manager slide w-full flex-shrink-0 science_and_fiction h-screen">
+              science and fiction
+            </div>
+            <div  data-color="salmon" class=" color_manager slide w-full flex-shrink-0 biography h-screen ">
+              biography
+            </div>
+            <div  data-color="salmon" class=" color_manager slide w-full flex-shrink-0 self_help h-screen ">
+              self help
+            </div>
+            <div  data-color="salmon" class=" color_manager slide w-full flex-shrink-0 history h-screen ">
+              history
+            </div>
+            <div  data-color="salmon" class=" color_manager slide w-full flex-shrink-0 poetry h-screen ">
+              poetry
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-color="salmon"  class=" color_manager featured h-screen">
+        <div class="featured_authors"></div>
+        <div class="Footer"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- GSAP.js -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  </body>
+</html>
