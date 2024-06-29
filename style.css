@@ -1,4 +1,6 @@
 :root{
+    --brown:#BC9D7E;
+
     --black:#000;
     --white:#fff;
     --darkcyan: #062f2f;
@@ -17,6 +19,15 @@ body {
 *::selection{
     background-color: var(--selectioncolor);
     /* background-color: #a1463b; */
+}
+
+/* color to be added */
+
+body[theme="brown"] {
+    background-color: var(--brown);
+}
+body[theme="black"] .section {
+    color: var(--white);
 }
 
 
@@ -59,3 +70,19 @@ body[theme="blue"] .section {
     color : var(--bluetext);
 }
 
+body {
+    overflow: -moz-scrollbars-none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+body::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just to hide the scrollbar background */
+}
+
+.julius-sans-one-regular {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  

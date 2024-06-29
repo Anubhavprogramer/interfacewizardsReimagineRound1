@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     horizontal_scroll_animation();
     color_changer();
+    navelement();
 });
 
 
@@ -12,7 +13,7 @@ function horizontal_scroll_animation(){
             start: "top top",
             end: "bottom bottom",
             scrub: 2,
-            markers: true // Set to false or remove in production
+            markers: false // Set to false or remove in production
         },
         xPercent: -513,
         ease: "power4.inOut",
@@ -31,7 +32,7 @@ function color_changer() {
             end: "bottom center",
             onEnter: () => changeColor(container),
             onEnterBack: () => changeColor(container),
-            markers: true // Set to false or remove in production
+            markers: false // Set to false or remove in production
         });
     });
 
@@ -41,3 +42,11 @@ function color_changer() {
         console.log("color_changer")
     }
 }
+
+function navelement() {
+    const button = document.getElementById('nav_button')
+    button.addEventListener('click' , () => {
+        const nav = document.getElementById('mobile_nav')
+        nav.classList.toggle('hidden')
+    }
+)}

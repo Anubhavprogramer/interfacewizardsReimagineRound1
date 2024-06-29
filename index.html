@@ -1,48 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Document</title>
     <link rel="stylesheet" href="output.css" />
-    <link rel="stylesheet" href="style.css"/>
-  </head>
-  <body theme="black" >
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Julius+Sans+One&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body theme="black">
     <!-- Uncomment the heading if needed
     <h1 class="bg-red-300" >Radhe Radhe</h1>
     -->
     <div class="main h-fit">
-      <div data-color="blue" class=" color_manager home h-screen "></div>
-      <div data-color="cyan" class=" color_manager carousel h-screen"></div>
-      <div data-color="salmon" class=" color_manager trending h-screen"></div>
-      <div data-color="black" class=" color_manager book_section w-full">
-        <div class="book_container h-[500vh] relative">
-          <div class="slides w-full flex h-screen sticky top-0 left-0 gap-10">
-            <div data-color="salmon"  class=" color_manager slide w-full flex-shrink-0 mystery_books h-screen">
-              mystery_books
+        <!-- home section -->
+        <div data-color="brown" class="color_manager home section h-screen">
+            <div class="navigation">
+                <!-- full screen -->
+                <div class="hidden sm:block">
+                    <nav class="h-24 grid grid-cols-9 p-3 gap-4 lg:gap-10">
+                        <div class="logo bg-white rounded-xl">
+                            <img class="h-full" src="./assets/Banners/logo.png" alt="Logo" />
+                        </div>
+                        <div class="flex gap-5 lg:gap-10 col-span-7 h-full items-center">
+                            <span class="text-black julius-sans-one-regular hover:underline cursor-pointer text-[0.7rem] xl:text-[1.2rem]">New
+                                arrivals</span>
+                            <span class="text-black julius-sans-one-regular hover:underline cursor-pointer text-[0.7rem] xl:text-[1.2rem]">Best
+                                sellers</span>
+                            <span class="text-black julius-sans-one-regular hover:underline cursor-pointer text-[0.7rem] xl:text-[1.2rem]">Award
+                                Winners</span>
+                            <span class="text-black julius-sans-one-regular hover:underline cursor-pointer text-[0.7rem] xl:text-[1.2rem]">Featured
+                                Authors</span>
+                        </div>
+                        <div class="h-full flex items-center justify-center">
+                            <img class="cursor-pointer" src="./assets/Banners/Login.png" alt="Login" />
+                        </div>
+                    </nav>
+                </div>
+                <!-- mobile screen -->
+                <div class="block sm:hidden">
+                    <nav class="h-24 p-3 flex justify-between lg:gap-10 bg-customColor-brown">
+                        <div class="logo bg-white h-full rounded-xl">
+                            <img class="h-full" src="./assets/Banners/logo.png" alt="Logo" />
+                        </div>
+
+                        <div class=" w-16 h-full flex justify-center items-center">
+                            <label>
+                                <div class="w-9 h-10 cursor-pointer flex flex-col items-center justify-center">
+                                    <input id="nav_button" class="hidden peer" type="checkbox" />
+                                    <div
+                                        class="w-[50%] h-[2px] bg-black rounded-sm transition-all duration-300 origin-left translate-y-[0.45rem] peer-checked:rotate-[-45deg]">
+                                    </div>
+                                    <div
+                                        class="w-[50%] h-[2px] bg-black rounded-md transition-all duration-300 origin-center peer-checked:hidden">
+                                    </div>
+                                    <div
+                                        class="w-[50%] h-[2px] bg-black rounded-md transition-all duration-300 origin-left -translate-y-[0.45rem] peer-checked:rotate-[45deg]">
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+
+                    </nav>
+                    <div id="mobile_nav" class=" hidden w-full absolute items-center justify-center bg-customColor-brown">
+                        <div class="flex flex-col gap-3 col-span-7  h-full items-center">
+                            <span class="text-white hover:underline cursor-pointer julius-sans-one-regular text-[0.7rem] xl:text-[1.2rem]">New
+                                arrivals</span>
+                            <span class="text-white hover:underline cursor-pointer julius-sans-one-regular text-[0.7rem] xl:text-[1.2rem]">Best
+                                sellers</span>
+                            <span class="text-white hover:underline cursor-pointer julius-sans-one-regular text-[0.7rem] xl:text-[1.2rem]">Award
+                                Winners</span>
+                            <span class="text-white hover:underline cursor-pointer julius-sans-one-regular text-[0.7rem] xl:text-[1.2rem]">Featured
+                                Authors</span>
+                            <span class="text-white hover:underline cursor-pointer julius-sans-one-regular text-[0.7rem] xl:text-[1.2rem]">Login/Sign up</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div data-color="salmon"  class=" color_manager slide w-full flex-shrink-0 science_and_fiction h-screen">
-              science and fiction
-            </div>
-            <div  data-color="salmon" class=" color_manager slide w-full flex-shrink-0 biography h-screen ">
-              biography
-            </div>
-            <div  data-color="salmon" class=" color_manager slide w-full flex-shrink-0 self_help h-screen ">
-              self help
-            </div>
-            <div  data-color="salmon" class=" color_manager slide w-full flex-shrink-0 history h-screen ">
-              history
-            </div>
-            <div  data-color="salmon" class=" color_manager slide w-full flex-shrink-0 poetry h-screen ">
-              poetry
-            </div>
-          </div>
         </div>
-      </div>
-      <div data-color="salmon"  class=" color_manager featured h-screen">
-        <div class="featured_authors"></div>
-        <div class="Footer"></div>
-      </div>
+
+        <div data-color="cyan" class="color_manager carousel h-screen"></div>
+        <div data-color="salmon" class="color_manager trending h-screen"></div>
+        <div data-color="black" class="color_manager book_section w-full">
+            <div class="book_container h-[500vh] relative">
+                <div class="slides w-full flex h-screen sticky top-0 left-0 gap-10">
+                    <div data-color="salmon" class="color_manager slide w-full flex-shrink-0 mystery_books h-screen">
+                        mystery_books
+                    </div>
+                    <div data-color="salmon"
+                        class="color_manager slide w-full flex-shrink-0 science_and_fiction h-screen">
+                        science and fiction
+                    </div>
+                    <div data-color="blue" class="color_manager slide w-full flex-shrink-0 biography h-screen">
+                        biography
+                    </div>
+                    <div data-color="cyan" class="color_manager slide w-full flex-shrink-0 self_help h-screen">
+                        self help
+                    </div>
+                    <div data-color="salmon" class="color_manager slide w-full flex-shrink-0 history h-screen">
+                        history
+                    </div>
+                    <div data-color="white" class="color_manager slide w-full flex-shrink-0 poetry h-screen">
+                        poetry
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-color="salmon" class="color_manager featured h-screen">
+            <div class="featured_authors"></div>
+            <div class="Footer"></div>
+        </div>
     </div>
 
     <script src="script.js"></script>
@@ -51,5 +124,6 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-  </body>
+</body>
+
 </html>
