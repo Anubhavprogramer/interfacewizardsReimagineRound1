@@ -5,13 +5,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Document</title>
-    <link rel="stylesheet" href="output.css" />
-    <link rel="stylesheet" href="style.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Julius+Sans+One&display=swap"
         rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="style.css" />
+
+
+
 </head>
 
 <body theme="black">
@@ -29,13 +33,17 @@
                             <img class="h-full" src="./assets/Banners/logo.png" alt="Logo" />
                         </div>
                         <div class="flex gap-5 lg:gap-10 col-span-7 h-full items-center">
-                            <span class="text-black julius-sans-one-regular hover:underline cursor-pointer text-[0.7rem] xl:text-[1.2rem]">New
+                            <span
+                                class="text-black julius-sans-one-regular hover:underline cursor-pointer text-[0.7rem] xl:text-[1.2rem]">New
                                 arrivals</span>
-                            <span class="text-black julius-sans-one-regular hover:underline cursor-pointer text-[0.7rem] xl:text-[1.2rem]">Best
+                            <span
+                                class="text-black julius-sans-one-regular hover:underline cursor-pointer text-[0.7rem] xl:text-[1.2rem]">Best
                                 sellers</span>
-                            <span class="text-black julius-sans-one-regular hover:underline cursor-pointer text-[0.7rem] xl:text-[1.2rem]">Award
+                            <span
+                                class="text-black julius-sans-one-regular hover:underline cursor-pointer text-[0.7rem] xl:text-[1.2rem]">Award
                                 Winners</span>
-                            <span class="text-black julius-sans-one-regular hover:underline cursor-pointer text-[0.7rem] xl:text-[1.2rem]">Featured
+                            <span
+                                class="text-black julius-sans-one-regular hover:underline cursor-pointer text-[0.7rem] xl:text-[1.2rem]">Featured
                                 Authors</span>
                         </div>
                         <div class="h-full flex items-center justify-center">
@@ -68,17 +76,24 @@
                         </div>
 
                     </nav>
-                    <div id="mobile_nav" class=" hidden w-full absolute items-center justify-center bg-customColor-brown">
+                    <div id="mobile_nav"
+                        class=" hidden w-full absolute items-center justify-center bg-customColor-brown">
                         <div class="flex flex-col gap-3 col-span-7  h-full items-center">
-                            <span class="text-white hover:underline cursor-pointer julius-sans-one-regular text-[0.7rem] xl:text-[1.2rem]">New
+                            <span
+                                class="text-white hover:underline cursor-pointer julius-sans-one-regular text-[0.7rem] xl:text-[1.2rem]">New
                                 arrivals</span>
-                            <span class="text-white hover:underline cursor-pointer julius-sans-one-regular text-[0.7rem] xl:text-[1.2rem]">Best
+                            <span
+                                class="text-white hover:underline cursor-pointer julius-sans-one-regular text-[0.7rem] xl:text-[1.2rem]">Best
                                 sellers</span>
-                            <span class="text-white hover:underline cursor-pointer julius-sans-one-regular text-[0.7rem] xl:text-[1.2rem]">Award
+                            <span
+                                class="text-white hover:underline cursor-pointer julius-sans-one-regular text-[0.7rem] xl:text-[1.2rem]">Award
                                 Winners</span>
-                            <span class="text-white hover:underline cursor-pointer julius-sans-one-regular text-[0.7rem] xl:text-[1.2rem]">Featured
+                            <span
+                                class="text-white hover:underline cursor-pointer julius-sans-one-regular text-[0.7rem] xl:text-[1.2rem]">Featured
                                 Authors</span>
-                            <span class="text-white hover:underline cursor-pointer julius-sans-one-regular text-[0.7rem] xl:text-[1.2rem]">Login/Sign up</span>
+                            <span
+                                class="text-white hover:underline cursor-pointer julius-sans-one-regular text-[0.7rem] xl:text-[1.2rem]">Login/Sign
+                                up</span>
                         </div>
                     </div>
                 </div>
@@ -87,12 +102,14 @@
             <div class="home h-[80vh] w-11/12 mt-9  p-7 flex bg-customColor-homeColor ">
                 <div class="col-1 sm:w-1/2 h-full">
                     <div class="flex h-full justify-center items-center text-center flex-col">
-                        <span class="font-[Italiana] block my-2 text-customColor-brown text-6xl" >Dicover Your</span>
-                        <span class="font-[Italiana] block my-2 text-customColor-brown text-6xl" >Next Great</span>
-                        <span class="font-[Italiana] block my-2 text-customColor-brown text-6xl" >Read</span>
-                        <span class="julius-sans-one-regular my-6 block text-customColor-brown">Latest Release Collection</span>
-        
-                        <button class=" bg-customColor-buttonColor my-8 julius-sans-one-regular h-fit w-fit text-white p-2.5 ">
+                        <span class="font-[Italiana] block my-2 text-customColor-brown text-6xl">Dicover Your</span>
+                        <span class="font-[Italiana] block my-2 text-customColor-brown text-6xl">Next Great</span>
+                        <span class="font-[Italiana] block my-2 text-customColor-brown text-6xl">Read</span>
+                        <span class="julius-sans-one-regular my-6 block text-customColor-brown">Latest Release
+                            Collection</span>
+
+                        <button
+                            class=" bg-customColor-buttonColor my-8 julius-sans-one-regular h-fit w-fit text-white p-2.5 ">
                             Buy now
                         </button>
                     </div>
@@ -106,12 +123,20 @@
                 </div>
             </div>
         </div>
+        <!-- book section -->
+        <div data-color="salmon" class="color_manager trending h-screen">
+            <div>
+                <nav class="h-fit w-full flex justify-between items-center bg-customColor-now_trending">
+                    <img class="h-32" src="./assets/Banners/logo.png" alt="">
+                    <div class="w-1/5 flex px-10 justify-center text-center" >
+                        <p class="text-4xl julius-sans-one-regular text-white ">Now Trending</p>
+                    </div>
+                </nav>
+            </div>
+        </div>
 
 
 
-
-        <div data-color="cyan" class="color_manager carousel h-screen"></div>
-        <div data-color="salmon" class="color_manager trending h-screen"></div>
         <div data-color="black" class="color_manager book_section w-full">
             <div class="book_container h-[500vh] relative">
                 <div class="slides w-full flex h-screen sticky top-0 left-0 gap-10">
@@ -149,6 +174,10 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
 </body>
 
 </html>
