@@ -6,6 +6,8 @@ module.exports = {
       colors: {
         customColor: {
           brown: '#6E4F32',
+          homeColor: '#D9C9BA',
+          buttonColor: '#9B5A1D',
         },
       },
     },
