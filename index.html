@@ -20,7 +20,7 @@
     -->
     <div class="main h-fit">
         <!-- home section -->
-        <div data-color="brown" class="color_manager home section h-screen">
+        <div data-color="brown" class="color_manager home overflow-hidden section h-screen">
             <div class="navigation">
                 <!-- full screen -->
                 <div class="hidden sm:block">
@@ -84,15 +84,26 @@
                 </div>
             </div>
 
-            <div class="home h-fit w-fit mt-9 p-7 bg-customColor-homeColor ">
-                <span class="font-[Italiana] block my-2 text-customColor-brown text-6xl" >Dicover Your</span>
-                <span class="font-[Italiana] block my-2 text-customColor-brown text-6xl" >Next Great</span>
-                <span class="font-[Italiana] block my-2 text-customColor-brown text-6xl" >Read</span>
-                <span class="julius-sans-one-regular my-6 block text-customColor-brown">Latest Release Collection</span>
+            <div class="home h-[80vh] w-11/12 mt-9  p-7 flex bg-customColor-homeColor ">
+                <div class="col-1 sm:w-1/2 h-full">
+                    <div class="flex h-full justify-center items-center text-center flex-col">
+                        <span class="font-[Italiana] block my-2 text-customColor-brown text-6xl" >Dicover Your</span>
+                        <span class="font-[Italiana] block my-2 text-customColor-brown text-6xl" >Next Great</span>
+                        <span class="font-[Italiana] block my-2 text-customColor-brown text-6xl" >Read</span>
+                        <span class="julius-sans-one-regular my-6 block text-customColor-brown">Latest Release Collection</span>
+        
+                        <button class=" bg-customColor-buttonColor my-8 julius-sans-one-regular h-fit w-fit text-white p-2.5 ">
+                            Buy now
+                        </button>
+                    </div>
 
-                <button class=" bg-customColor-buttonColor my-8y julius-sans-one-regular h-fit w-fit text-white p-2.5 ">
-                    Buy now
-                </button>
+                </div>
+
+                <div class="col-2 h-fit sm:w-1/2 hidden sm:block m-10 ">
+                    <div class="flex h-fit justify-center  items-center">
+                        <img class="  h-full drop-shadow-xl w-fit" src="./assets/Books/200262427.jpg" alt="Home" />
+                    </div>
+                </div>
             </div>
         </div>
 
