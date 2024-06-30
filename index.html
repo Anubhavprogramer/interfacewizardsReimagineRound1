@@ -10,12 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Julius+Sans+One&display=swap"
         rel="stylesheet" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="output.css" />
     <link rel="stylesheet" href="style.css" />
-
-
-
 </head>
 
 <body theme="black">
@@ -58,7 +54,7 @@
                             <img class="h-full" src="./assets/Banners/logo.png" alt="Logo" />
                         </div>
 
-                        <div class=" w-16 h-full flex justify-center items-center">
+                        <div class="w-16 h-full flex justify-center items-center">
                             <label>
                                 <div class="w-9 h-10 cursor-pointer flex flex-col items-center justify-center">
                                     <input id="nav_button" class="hidden peer" type="checkbox" />
@@ -74,11 +70,10 @@
                                 </div>
                             </label>
                         </div>
-
                     </nav>
                     <div id="mobile_nav"
-                        class=" hidden w-full absolute items-center justify-center bg-customColor-brown">
-                        <div class="flex flex-col gap-3 col-span-7  h-full items-center">
+                        class="hidden w-full absolute items-center justify-center bg-customColor-brown">
+                        <div class="flex flex-col gap-3 col-span-7 h-full items-center">
                             <span
                                 class="text-white hover:underline cursor-pointer julius-sans-one-regular text-[0.7rem] xl:text-[1.2rem]">New
                                 arrivals</span>
@@ -99,7 +94,7 @@
                 </div>
             </div>
 
-            <div class="home h-[80vh] w-11/12 mt-9  p-7 flex bg-customColor-homeColor ">
+            <div class="home h-[80vh] w-11/12 mt-9 p-7 flex bg-customColor-homeColor">
                 <div class="col-1 sm:w-1/2 h-full">
                     <div class="flex h-full justify-center items-center text-center flex-col">
                         <span class="font-[Italiana] block my-2 text-customColor-brown text-6xl">Dicover Your</span>
@@ -109,16 +104,15 @@
                             Collection</span>
 
                         <button
-                            class=" bg-customColor-buttonColor my-8 julius-sans-one-regular h-fit w-fit text-white p-2.5 ">
+                            class="bg-customColor-buttonColor my-8 julius-sans-one-regular h-fit w-fit text-white p-2.5">
                             Buy now
                         </button>
                     </div>
-
                 </div>
 
-                <div class="col-2 h-fit sm:w-1/2 hidden sm:block m-10 ">
-                    <div class="flex h-fit justify-center  items-center">
-                        <img class="  h-full drop-shadow-xl w-fit" src="./assets/Books/200262427.jpg" alt="Home" />
+                <div class="col-2 h-fit sm:w-1/2 hidden sm:block m-10">
+                    <div class="flex h-fit justify-center items-center">
+                        <img class="h-full drop-shadow-xl w-fit" src="./assets/Books/200262427.jpg" alt="Home" />
                     </div>
                 </div>
             </div>
@@ -126,23 +120,142 @@
         <!-- book section -->
         <div data-color="salmon" class="color_manager trending h-screen">
             <div>
-                <nav class="h-fit w-full flex justify-between items-center bg-customColor-now_trending">
-                    <img class="h-32" src="./assets/Banners/logo.png" alt="">
-                    <div class="w-1/5 flex px-10 justify-center text-center" >
-                        <p class="text-4xl julius-sans-one-regular text-white ">Now Trending</p>
+                <nav class="h-fit w-[100vw] flex justify-between items-center bg-customColor-now_trending">
+                    <img class="h-32" src="./assets/Banners/logo.png" alt="" />
+                    <div class="w-1/5 flex px-10 justify-center text-center">
+                        <p class="text-4xl julius-sans-one-regular text-white">
+                            Now Trending
+                        </p>
                     </div>
                 </nav>
+                <div class="flex h-full justify-between items-center">
+                    <div class="carousal_container w-full h-[90%] flex flex-col items-start justify-start">
+                        <div class="slider w-full sm:w-[70%] cursor-grab overflow-hidden">
+                            <div class="slider-wrapper w-full whitespace-nowrap flex transition-transform ease-out">
+                                <div class="slider-item inline-block p-[2vw] sm:mx-3 mx-2">
+                                    <div class="w-40 sm:w-64 bg-blue-700 sm:p-3 p-2 mx-auto">
+                                        <div class="image">
+                                            <img src="./assets/Books/43798285.jpg"
+                                                class="w-full h-[70%] object-cover rounded-lg" />
+                                        </div>
+                                        <div class="text flex flex-col sm:px-2 py-2 justify-center w-full text-white">
+                                            <span class="text-sm julius-sans-one-regular sm:text-2xl">Author 1</span>
+                                            <span class="text-sm julius-sans-one-regular sm:text-2xl p-2">$19.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-item inline-block p-[2vw] sm:mx-4 mx-2">
+                                    <div class="w-40 sm:w-64 bg-blue-700 sm:p-3 p-2 mx-auto">
+                                        <div class="image">
+                                            <img src="./assets/Books/43798285.jpg"
+                                                class="w-full h-[70%] object-cover rounded-lg" />
+                                        </div>
+                                        <div class="text flex flex-col sm:px-2 py-2 justify-center w-full text-white">
+                                            <span class="text-sm julius-sans-one-regular sm:text-2xl">Author 1</span>
+                                            <span class="text-sm julius-sans-one-regular sm:text-2xl p-2">$19.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-item inline-block p-[2vw] sm:mx-4 mx-2">
+                                    <div class="w-40 sm:w-64 bg-blue-700 sm:p-3 p-2 mx-auto">
+                                        <div class="image">
+                                            <img src="./assets/Books/43798285.jpg"
+                                                class="w-full h-[70%] object-cover rounded-lg" />
+                                        </div>
+                                        <div class="text flex flex-col sm:px-2 py-2 justify-center w-full text-white">
+                                            <span class="text-sm julius-sans-one-regular sm:text-2xl">Author 1</span>
+                                            <span class="text-sm julius-sans-one-regular sm:text-2xl p-2">$19.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-item inline-block p-[2vw] sm:mx-4 mx-2">
+                                    <div class="w-40 sm:w-64 bg-blue-700 sm:p-3 p-2 mx-auto">
+                                        <div class="image">
+                                            <img src="./assets/Books/43798285.jpg"
+                                                class="w-full h-[70%] object-cover rounded-lg" />
+                                        </div>
+                                        <div class="text flex flex-col sm:px-2 py-2 justify-center w-full text-white">
+                                            <span class="text-sm julius-sans-one-regular sm:text-2xl">Author 1</span>
+                                            <span class="text-sm julius-sans-one-regular sm:text-2xl p-2">$19.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-item inline-block p-[2vw] sm:mx-4 mx-2">
+                                    <div class="w-40 sm:w-64 bg-blue-700 sm:p-3 p-2 mx-auto">
+                                        <div class="image">
+                                            <img src="./assets/Books/43798285.jpg"
+                                                class="w-full h-[70%] object-cover rounded-lg" />
+                                        </div>
+                                        <div class="text flex flex-col sm:px-2 py-2 justify-center w-full text-white">
+                                            <span class="text-sm julius-sans-one-regular sm:text-2xl">Author 1</span>
+                                            <span class="text-sm julius-sans-one-regular sm:text-2xl p-2">$19.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-item inline-block p-[2vw] sm:mx-4 mx-2">
+                                    <div class="w-40 sm:w-64 bg-blue-700 sm:p-3 p-2 mx-auto">
+                                        <div class="image">
+                                            <img src="./assets/Books/43798285.jpg"
+                                                class="w-full h-[70%] object-cover rounded-lg" />
+                                        </div>
+                                        <div class="text flex flex-col sm:px-2 py-2 justify-center w-full text-white">
+                                            <span class="text-sm julius-sans-one-regular sm:text-2xl">Author 1</span>
+                                            <span class="text-sm julius-sans-one-regular sm:text-2xl p-2">$19.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-item inline-block p-[2vw] sm:mx-4 mx-2">
+                                    <div class="w-40 sm:w-64 bg-blue-700 sm:p-3 p-2 mx-auto">
+                                        <div class="image">
+                                            <img src="./assets/Books/43798285.jpg"
+                                                class="w-full h-[70%] object-cover rounded-lg" />
+                                        </div>
+                                        <div class="text flex flex-col sm:px-2 py-2 justify-center w-full text-white">
+                                            <span class="text-sm julius-sans-one-regular sm:text-2xl">Author 1</span>
+                                            <span class="text-sm julius-sans-one-regular sm:text-2xl p-2">$19.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-center w-full">
+                                <button class="h-12 rounded-lg w-24 bg-customColor-now_trending">
+                                    <span class="julius-sans-one-regular font-bolder text-white">SEE ALL</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h1>
+                            <!-- to be added here -->
+                        </h1>
+                    </div>
+                </div>
             </div>
         </div>
 
-
-
-        <div data-color="black" class="color_manager book_section w-full">
+        <div data-color="grey" class="color_manager book_section w-full">
             <div class="book_container h-[500vh] relative">
                 <div class="slides w-full flex h-screen sticky top-0 left-0 gap-10">
-                    <div data-color="salmon" class="color_manager slide w-full flex-shrink-0 mystery_books h-screen">
-                        mystery_books
+                    <div data-color="grey" class="color_manager slide w-full flex-shrink-0 mystery_books h-screen">
+                        <nav class="h-fit w-[100vw] p-3 flex justify-between items-center bg-customColor-mystery_nav">
+                            <img class="h-32" src="./assets/Banners/logo.png" alt="" />
+                            <div class="w-1/2 flex px-10 justify-center text-center">
+                                <p class="text-7xl font-[italiana] text-customColor-mystery_nav_text">
+                                    Mystery books
+                                </p>
+                            </div>
+                        </nav>
+                        <div class="h-full w-full bg-customColor-mystery_container">
+                            <div class="col_1">
+                                
+                            </div>
+                            <div class="col_2">
+                                
+                            </div>
+                        </div>
                     </div>
+
                     <div data-color="salmon"
                         class="color_manager slide w-full flex-shrink-0 science_and_fiction h-screen">
                         science and fiction
@@ -176,8 +289,6 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-
 </body>
 
 </html>
