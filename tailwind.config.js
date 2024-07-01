@@ -18,6 +18,7 @@ module.exports = {
           sef_help_body: '#F8F5EE',
           history_body: '#F5CCB8',
           poetry_nav: '#D9D9D9',
+          book_1: '#D3AE81',
         },
       },
     },
