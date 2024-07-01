@@ -3,23 +3,13 @@ document.addEventListener("DOMContentLoaded", function() {
     color_changer();
     navelement();
     now_trending_slider();
+
+    swiper_var_code();
 });
 
 
 
 function horizontal_scroll_animation(){
-    // gsap.to(".slide", {
-    //     scrollTrigger: {
-    //         trigger: ".book_section",
-    //         start: "top top",
-    //         end: "bottom bottom",
-    //         scrub: 1,
-    //         markers: false // Set to false or remove in production
-    //     },
-    //     xPercent: -500,
-    //     ease: "power4.inOut",
-    // });
-    // console.log("horizontal_scroll_animation")
 
     const slides = document.querySelector('.slides');
     console.log(slides.offsetWidth)
@@ -185,6 +175,20 @@ function now_trending_slider(){
     };
     
     animateScroll();
+}
+
+
+function swiper_var_code(){
+    var swiper = new Swiper(".card_slider", {
+        slidesPerView: 3,
+        centeredSlides: true,
+        spaceBetween: 10,
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
 }
 
 
