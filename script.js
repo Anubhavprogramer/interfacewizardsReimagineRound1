@@ -8,18 +8,43 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 function horizontal_scroll_animation(){
-    gsap.to(".slide", {
-        scrollTrigger: {
-            trigger: ".book_section",
-            start: "top top",
-            end: "bottom bottom",
-            scrub: 2,
-            markers: false // Set to false or remove in production
-        },
-        xPercent: -513,
-        ease: "power4.inOut",
+    // gsap.to(".slide", {
+    //     scrollTrigger: {
+    //         trigger: ".book_section",
+    //         start: "top top",
+    //         end: "bottom bottom",
+    //         scrub: 1,
+    //         markers: false // Set to false or remove in production
+    //     },
+    //     xPercent: -500,
+    //     ease: "power4.inOut",
+    // });
+    // console.log("horizontal_scroll_animation")
+
+    const slides = document.querySelector('.slides');
+    console.log(slides.offsetWidth)
+
+    function getScrollAmount() {
+        let slidesWidth = slides.scrollWidth;
+	    return -(slidesWidth - window.innerWidth);
+    }
+
+    const tween = gsap.to(slides, {
+        x: getScrollAmount,
+        duration: 3,
+        ease: "none",
     });
-    console.log("horizontal_scroll_animation")
+
+    ScrollTrigger.create({
+        trigger:".book_container",
+        start:"top top",
+        end: () => `+=${getScrollAmount() * -1}`,
+        pin:true,
+        animation:tween,
+        scrub:1,
+        invalidateOnRefresh:true,
+        markers:false
+    })
 }
 
 function color_changer() {

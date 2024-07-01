@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Julius+Sans+One&display=swap"
         rel="stylesheet" />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    
     <link rel="stylesheet" href="output.css" />
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -122,7 +125,7 @@
             <div>
                 <nav class="h-fit w-[100vw] flex justify-between items-center bg-customColor-now_trending">
                     <img class="h-32" src="./assets/Banners/logo.png" alt="" />
-                    <div class="w-1/5 flex px-10 justify-center text-center">
+                    <div class="w-1/2 flex px-10 justify-center text-center">
                         <p class="text-4xl julius-sans-one-regular text-white">
                             Now Trending
                         </p>
@@ -235,48 +238,126 @@
         </div>
 
         <div data-color="grey" class="color_manager book_section w-full">
-            <div class="book_container h-[500vh] relative">
-                <div class="slides w-full flex h-screen sticky top-0 left-0 gap-10">
+            <!-- racesWrapper -->
+            <div class="book_container relative">
+                <!-- races -->
+                <div class="slides w-full  sm:flex sm:sticky  ">
                     <div data-color="grey" class="color_manager slide w-full flex-shrink-0 mystery_books h-screen">
                         <nav class="h-fit w-[100vw] p-3 flex justify-between items-center bg-customColor-mystery_nav">
                             <img class="h-32" src="./assets/Banners/logo.png" alt="" />
                             <div class="w-1/2 flex px-10 justify-center text-center">
-                                <p class="text-7xl font-[italiana] text-customColor-mystery_nav_text">
+                                <p class="text-4xl sm:text-7xl font-[italiana] text-customColor-mystery_nav_text">
                                     Mystery books
                                 </p>
                             </div>
                         </nav>
-                        <div class="h-full w-full bg-customColor-mystery_container">
+                        <div class="h-full   bg-customColor-mystery_container">
                             <div class="col_1">
                                 
                             </div>
                             <div class="col_2">
-                                
+
                             </div>
                         </div>
                     </div>
 
-                    <div data-color="salmon"
-                        class="color_manager slide w-full flex-shrink-0 science_and_fiction h-screen">
-                        science and fiction
+                    <div data-color="salmon" class="color_manager slide w-full flex-shrink-0 science_and_fiction h-screen">
+                        <nav class="h-fit w-[100vw] p-3 flex justify-between items-center bg-customColor-Science_and_fiction_nav">
+                            <img class="h-32" src="./assets/Banners/logo.png" alt="" />
+                            <div class=" w-1/2 sm:flex px-10 sm:justify-center sm:text-center">
+                                <p class="text-4xl sm:text-7xl font-[italiana] text-white">
+                                    Science and fiction
+                                </p>
+                            </div>
+                        </nav>
+                        <div class="h-[80%]  bg-white">
+                            <div class="col_1">
+                                
+                            </div>
+                            <div class="col_2">
+
+                            </div>
+                        </div>
                     </div>
                     <div data-color="blue" class="color_manager slide w-full flex-shrink-0 biography h-screen">
-                        biography
+                        <nav class="h-fit w-[100vw] p-3 flex justify-between items-center bg-white">
+                            <img class="h-32" src="./assets/Banners/logo.png" alt="" />
+                            <div class="w-1/2 flex px-10 justify-center text-center">
+                                <p class="text-4xl sm:text-7xl font-[italiana] text-customColor-mystery_nav_text">
+                                    Biography
+                                </p>
+                            </div>
+                        </nav>
+                        <div class="h-[80%]  bg-customColor-biography_body">
+                            <div class="col_1">
+                                
+                            </div>
+                            <div class="col_2">
+
+                            </div>
+                        </div>
                     </div>
                     <div data-color="cyan" class="color_manager slide w-full flex-shrink-0 self_help h-screen">
-                        self help
+                        <nav class="h-fit w-[100vw] p-3 flex justify-between items-center bg-customColor-sef_help_nav">
+                            <img class="h-32" src="./assets/Banners/logo.png" alt="" />
+                            <div class="w-1/2 flex px-10 justify-center text-center">
+                                <p class="text-4xl sm:text-7xl font-[italiana] text-white">
+                                    Self Help
+                                </p>
+                            </div>
+                        </nav>
+                        <div class="h-[80%]  bg-white">
+                            <div class="col_1">
+                                
+                            </div>
+                            <div class="col_2">
+
+                            </div>
+                        </div>
                     </div>
-                    <div data-color="salmon" class="color_manager slide w-full flex-shrink-0 history h-screen">
-                        history
+                    <div data-color="grey" class="color_manager slide w-full flex-shrink-0 history h-screen">
+                        <nav class="h-fit w-[100vw] p-3 flex justify-between items-center bg-customColor-now_trending">
+                            <img class="h-32" src="./assets/Banners/logo.png" alt="" />
+                            <div class="w-1/2 flex px-10 justify-center text-center">
+                                <p class="text-4xl sm:text-7xl font-[italiana] text-white">
+                                    Hestory
+                                </p>
+                            </div>
+                        </nav>
+                        <div class="h-[80%]  bg-customColor-history_body">
+                            <div class="col_1">
+                                
+                            </div>
+                            <div class="col_2">
+
+                            </div>
+                        </div>
                     </div>
                     <div data-color="white" class="color_manager slide w-full flex-shrink-0 poetry h-screen">
-                        poetry
+                        <nav class="h-fit w-[100vw] p-3 flex justify-between items-center bg-customColor-poetry_nav">
+                            <img class="h-32" src="./assets/Banners/logo.png" alt="" />
+                            <div class="w-1/2 flex px-10 justify-center text-center">
+                                <p class="text-4xl sm:text-7xl font-[italiana] text-black">
+                                    Poetry
+                                </p>
+                            </div>
+                        </nav>
+                        <div class="  h-[80%] bg-customColor-mystery_container">
+                            <div class="col_1">
+                                <h1 class="text-white">Radhe radhe</h1>
+                            </div>
+                            <div class="col_2">
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div data-color="salmon" class="color_manager featured h-screen">
-            <div class="featured_authors"></div>
+            <div class="featured_authors">
+                featured_authors
+            </div>
             <div class="Footer"></div>
         </div>
     </div>
@@ -289,6 +370,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
 </body>
 
 </html>

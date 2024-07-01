@@ -84,10 +84,10 @@ body {
     -ms-overflow-style: none; /* IE and Edge */
 }
 
-body::-webkit-scrollbar {
-    width: 0px;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just to hide the scrollbar background */
-}
+/* body::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+} */
 
 .julius-sans-one-regular {
     font-family: "Julius Sans One", sans-serif;
